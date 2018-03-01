@@ -2,6 +2,7 @@
     "items": [
        {
            "service":"Spooler",
+           "event_on_stop":true,
            "interval": 5
        }
     ],

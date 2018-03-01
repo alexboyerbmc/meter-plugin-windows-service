@@ -45,10 +45,10 @@ for k, v in pairs(services) do
 	    file:write("  down_cmd=".. v.down_cmd.."\n")
 	end
 	if (v.event_on_stop ~= nil) then
-	    file:write("  event_on_stop=".. v.event_on_stop.."\n")
+	    file:write("  event_on_stop=".. tostring(v.event_on_stop).."\n")
 	end
 	if (v.event_on_restart ~= nil) then
-	    file:write("  event_on_restart=".. v.event_on_restart.."\n")
+	    file:write("  event_on_restart=".. tostring(v.event_on_restart).."\n")
 	end
 	if (v.interval ~= nil) then
 	    file:write("  interval_sec=".. v.interval.."\n")
