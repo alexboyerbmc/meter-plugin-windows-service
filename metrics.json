@@ -1,0 +1,11 @@
+{
+  "WIN_SERVICE_KEEPALIVE": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 5000,
+    "description": "Keepalive metric for Windows services",
+    "displayName": "Windows Service Keepalive",
+    "displayNameShort": "Windows Service Keepalive",
+    "isDisabled": 0,
+    "unit": "number"
+  }
+}

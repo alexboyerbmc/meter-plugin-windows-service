@@ -1,0 +1,9 @@
+{
+    "items": [
+       {
+           "service":"Spooler",
+           "interval": 5
+       }
+    ],
+    "pollInterval": 5
+}

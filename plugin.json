@@ -1,0 +1,59 @@
+{
+  "name" : "TrueSight Pulse Windows Service Monitor",
+  "version" : "1.0",
+  "meterVersionRequired" : "4.8.0-800",
+  "unsupportedPlatforms" : [ ],
+  "tags" : "windows,services",
+  "description" : "Generic specification for Windows service monitor",
+  "dashboards" : [
+                 {
+                 "name" : "Windows Services",
+                 "layout" : "d-w=1&d-h=1&d-pad=5&d-bg=none&d-g-WIN_PDH=0-0-1-1"
+                 }
+  ],
+  "command" : "truesight-meter init.lua",
+  "command_lua" : "truesight-meter init.lua",
+  "postExtract" : "",
+  "postExtract_lua" : "",
+  "ignore" : "node_modules",
+  "metrics" : ["WIN_SERVICE_KEEPALIVE"],
+  "paramArray" : { "itemTitle" : ["Service"], "schemaTitle" : "Windows Service"},
+  "paramSchema": [
+    {
+      "title": "Service Name",
+      "name": "service",
+      "description": "The name of the Windows service to monitor",
+      "type" : "string",
+      "required" : true
+    },
+    {
+      "title": "Service Down Command",
+      "name": "down_cmd",
+      "description": "The name of a Powershell script to run on service down",
+      "type" : "string",
+      "required" : false
+    },
+    {
+      "title": "Send event on Service down",
+      "name": "event_on_stop",
+      "description": "Check this field if you want an event generated when the service is down.",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "title": "Send event on Service restart",
+      "name": "event_on_restart",
+      "description": "Check this field if you want an event generated when the service has been restarted.",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "title": "Poll Interval (sec)",
+      "name": "interval",
+      "description": "The service monitor interval in seconds",
+      "type" : "integer",
+      "default" : 5,
+      "required" : false
+    }
+  ]
+}
