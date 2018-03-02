@@ -46,14 +46,6 @@
       "description": "Check this field if you want an event generated when the service has been restarted.",
       "type": "boolean",
       "default": false
-    },
-    {
-      "title": "Poll Interval (sec)",
-      "name": "interval",
-      "description": "The service monitor interval in seconds",
-      "type" : "integer",
-      "default" : 5,
-      "required" : false
     }
   ]
 }

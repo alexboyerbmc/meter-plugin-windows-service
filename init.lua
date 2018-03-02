@@ -39,6 +39,11 @@ end
 --
 file = io.open("plugin_services.ini", "w")
 
+-- To facillitate setup, we just use a default 5 sec interval timer.
+--
+file:write("interval_sec=5\n")
+
+file:write("[".. k .. "]\n")
 for k, v in pairs(services) do
 	file:write("[".. k .. "]\n")
 	if (v.down_cmd ~= nil) then
@@ -49,9 +54,6 @@ for k, v in pairs(services) do
 	end
 	if (v.event_on_restart ~= nil) then
 	    file:write("  event_on_restart=".. tostring(v.event_on_restart).."\n")
-	end
-	if (v.interval ~= nil) then
-	    file:write("  interval_sec=".. v.interval.."\n")
 	end
 end
 file:close()
