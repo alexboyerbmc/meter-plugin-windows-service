@@ -46,7 +46,7 @@ file:write("interval_sec=5\n")
 for k, v in pairs(services) do
 	file:write("[".. k .. "]\n")
 	if (v.down_cmd ~= nil) then
-	    file:write("  down_cmd=".. v.down_cmd.."\n")
+	    file:write("  service_down_cmd=".. v.down_cmd.."\n")
 	end
 	if (v.event_on_stop ~= nil) then
 	    file:write("  event_on_stop=".. tostring(v.event_on_stop).."\n")
