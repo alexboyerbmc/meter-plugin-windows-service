@@ -40,10 +40,9 @@ end
 file = io.open("plugin_services.ini", "w")
 
 -- To facillitate setup, we just use a default 5 sec interval timer.
---
+
 file:write("interval_sec=5\n")
 
-file:write("[".. k .. "]\n")
 for k, v in pairs(services) do
 	file:write("[".. k .. "]\n")
 	if (v.down_cmd ~= nil) then

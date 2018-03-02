@@ -1,6 +1,6 @@
 {
   "name" : "TrueSight Pulse Windows Service Monitor",
-  "version" : "1.2",
+  "version" : "1.3",
   "meterVersionRequired" : "4.8.0-800",
   "unsupportedPlatforms" : [ ],
   "tags" : "windows,services",
