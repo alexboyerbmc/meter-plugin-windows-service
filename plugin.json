@@ -20,7 +20,7 @@
   "paramArray" : { "itemTitle" : ["Service"], "schemaTitle" : "Windows Service"},
   "paramArray": {
        "itemTitle": [
-            "service", "down_cmd", "event_on_stop", "event_on_restart",
+            "service", "down_cmd", "event_on_stop", "event_on_restart"
         ],
         "schemaTitle": "Windows Services"
    },
