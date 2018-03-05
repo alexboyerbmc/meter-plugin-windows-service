@@ -1,6 +1,6 @@
 {
   "name" : "TrueSight Pulse Windows Service Monitor",
-  "version" : "1.6",
+  "version" : "1.7",
   "meterVersionRequired" : "4.8.0-800",
   "unsupportedPlatforms" : [ ],
   "tags" : "windows,services",
@@ -37,7 +37,7 @@
       "name": "auto_restart",
       "description": "Attempt to restart the service when it transitions from running to down",
       "type" : "boolean",
-      "required" : true
+      "default" : true
     },
     {
       "title": "Send event on Service down",
@@ -51,7 +51,7 @@
       "name": "event_on_restart",
       "description": "Check this field if you want an event generated when the service has been restarted.",
       "type": "boolean",
-      "default": false
+      "default": true
     }
   ]
 }
