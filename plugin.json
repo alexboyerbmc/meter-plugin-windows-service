@@ -1,6 +1,6 @@
 {
   "name" : "TrueSight Pulse Windows Service Monitor",
-  "version" : "1.5",
+  "version" : "1.6",
   "meterVersionRequired" : "4.8.0-800",
   "unsupportedPlatforms" : [ ],
   "tags" : "windows,services",
@@ -33,11 +33,11 @@
       "required" : true
     },
     {
-      "title": "Service Down Command",
-      "name": "down_cmd",
-      "description": "The name of a Powershell script to run on service down",
-      "type" : "string",
-      "required" : false
+      "title": "Auto Restart",
+      "name": "auto_restart",
+      "description": "Attempt to restart the service when it transitions from running to down",
+      "type" : "boolean",
+      "required" : true
     },
     {
       "title": "Send event on Service down",
