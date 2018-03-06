@@ -28,7 +28,7 @@ param_file:close()
 
 local services = {}
 for _,item in pairs(params.items) do
-	services[item.service] = {down_cmd = item.auto_restart, event_on_stop = item.event_on_stop, event_on_restart = item.event_on_restart, interval=item.interval}
+	services[item.service] = {auto_restart = item.auto_restart, event_on_stop = item.event_on_stop, event_on_restart = item.event_on_restart}
 end
 
 --
@@ -45,7 +45,7 @@ file:write("interval_sec=5\n")
 
 for k, v in pairs(services) do
 	file:write("[".. k .. "]\n")
-	if (v.down_cmd ~= nil) then
+	if (v.auto_restart ~= nil) then
 	    file:write("  auto_restart=".. tostring(v.auto_restart).."\n")
 	end
 	if (v.event_on_stop ~= nil) then

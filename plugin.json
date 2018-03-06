@@ -1,6 +1,6 @@
 {
   "name" : "TrueSight Pulse Windows Service Monitor",
-  "version" : "1.9",
+  "version" : "1.10",
   "meterVersionRequired" : "4.8.0-800",
   "unsupportedPlatforms" : [ ],
   "tags" : "windows,services",
@@ -8,7 +8,7 @@
   "dashboards" : [
                  {
                  "name" : "Windows Services",
-                 "layout" : "d-w=1&d-h=1&d-pad=5&d-bg=none&d-g-WIN_PDH=0-0-1-1"
+                 "layout" : "d-w=1&d-h=1&d-pad=5&d-bg=none&d-g-WIN_SERVICES=0-0-1-1"
                  }
   ],
   "command" : "truesight-meter init.lua",
@@ -17,7 +17,6 @@
   "postExtract_lua" : "",
   "ignore" : "node_modules",
   "metrics" : ["WIN_SERVICE_KEEPALIVE"],
-  "paramArray" : { "itemTitle" : ["Service"], "schemaTitle" : "Windows Service"},
   "paramArray": {
        "itemTitle": [
             "service", "auto_restart", "event_on_stop", "event_on_restart"
