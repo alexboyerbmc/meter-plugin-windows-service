@@ -1,6 +1,6 @@
 {
   "name" : "TrueSight Pulse Windows Service Monitor",
-  "version" : "1.8",
+  "version" : "1.9",
   "meterVersionRequired" : "4.8.0-800",
   "unsupportedPlatforms" : [ ],
   "tags" : "windows,services",
@@ -20,7 +20,7 @@
   "paramArray" : { "itemTitle" : ["Service"], "schemaTitle" : "Windows Service"},
   "paramArray": {
        "itemTitle": [
-            "service", "down_cmd", "event_on_stop", "event_on_restart"
+            "service", "auto_restart", "event_on_stop", "event_on_restart"
         ],
         "schemaTitle": "Windows Services"
    },
