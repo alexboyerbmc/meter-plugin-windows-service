@@ -19,7 +19,7 @@
   "metrics" : ["WIN_SERVICE_KEEPALIVE"],
   "paramArray": {
        "itemTitle": [
-            "service", "auto_restart", "event_on_stop", "event_on_restart"
+            "service", "auto_restart", "event_on_state_change", "event_on_restart"
         ],
         "schemaTitle": "Windows Services"
    },
@@ -39,9 +39,9 @@
       "default" : true
     },
     {
-      "title": "Send event on Service down",
-      "name": "event_on_stop",
-      "description": "Check this field if you want an event generated when the service is down.",
+      "title": "Send event on service state change",
+      "name": "event_on_state_change",
+      "description": "Check this field if you want an event generated when the service changes state.",
       "type": "boolean",
       "default": true
     },
