@@ -1,6 +1,6 @@
 {
   "name" : "TrueSight Pulse Windows Service Monitor",
-  "version" : "1.10",
+  "version" : "1.11",
   "meterVersionRequired" : "4.8.0-800",
   "unsupportedPlatforms" : [ ],
   "tags" : "windows,services",
@@ -8,7 +8,7 @@
   "dashboards" : [
                  {
                  "name" : "Windows Services",
-                 "layout" : "d-w=1&d-h=1&d-pad=5&d-bg=none&d-g-WIN_SERVICES=0-0-1-1"
+                 "layout" : "d-w=1&d-h=1&d-pad=5&d-bg=none&d-g-WIN_SERVICE_KEEPALIVE=0-0-1-1"
                  }
   ],
   "command" : "truesight-meter init.lua",
