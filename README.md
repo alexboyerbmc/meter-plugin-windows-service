@@ -24,7 +24,12 @@ None
 
 ### Plugin Configuration Fields
 
-None
+|Field Name                         |Description                                                             |
+|:----------------------------------|:-----------------------------------------------------------------------|
+|Service Name                       |The name of the windows service to monitor                              |
+|Auto Restart                       |Indicates the service should be automatically restarted if down         |
+|Send event on service state change |Indicates an event should be sent when the service changes state        |
+|Send event on service restart      |Indicates an event should be sent when the service has restarted        |
 
 ### Metrics Collected
 
@@ -34,7 +39,9 @@ None
 
 ### Dashboards
 
-None
+|Dashboard Name   |Metrics Displayed                            |
+|:----------------|:--------------------------------------------|
+|Windows Services |A keepalive metric for each monitored Service|
 
 ### References
 
